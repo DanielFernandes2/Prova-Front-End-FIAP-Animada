@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Math.max(0, Math.ceil(scrollFractionAnimation * totalFrames))
             );
             requestAnimationFrame(() => {
-                animationFrame.src = `/src/assets/imgs/water/water_${String(frameIndex).padStart(3, '0')}.jpg`;
+                animationFrame.src = `./src/assets/imgs/water/water_${String(frameIndex).padStart(3, '0')}.jpg`;
             });
         }
     };
