@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Front-End Animada</title>
+    <link rel="icon" type="image/png" href="/src/assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/src/assets/fonts/gotham.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#"><img src="/src/assets/svgs/logo-fiap.svg" alt="Logo da Fiap" class="logo escrito FIAP"></a>
+        </div>
+        <div id="progress-bar"></div>
+    </header>
+    
+    <div class="secao_titulo">
+        <h1 class="texto_principal">A Melhor Faculdade</h1>
+        <h1 class="texto_principal tecnologia">de Tecnologia</h1>
+        <h1 class="sobre">SOBRE</h1>
+    </div>
+    <main>
+        
+        <section id="imersao">
+            <div class="marquee-container">
+                <div class="marquee marquee-left" id="marquee-left-1">
+                    <p>CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO.</p>
+                </div>
+            </div>
+            <div class="marquee-container">
+                <div class="marquee marquee-right" id="marquee-right-1">
+                    <p>TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/src/assets/imgs/intro.png" alt="Imagem de Cursos e Imersões" class="foto de uma menina com fone de ouvido olhando pro lado">
+                <div class="overlay overlay-bottom-1">
+                    <div class="marquee marquee-left" id="marquee-left-2">
+                        <p>• SKILLS • CONHECIMENTO</p>
+                    </div>
+                </div>
+                <div class="overlay overlay-bottom-2">
+                    <div class="marquee marquee-right" id="marquee-right-2">
+                        <p>MUITO ALÉM DOS TUTORIAIS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="water">
+            <div id="scroll-animation">
+                <img id="animation-frame" src="/src/assets/imgs/water/water_000.jpg" alt="Animation Frame">
+            </div>
+        </section>
+        <section id="cursos">
+            <div class="cursos-container">
+                <h1 class="cursos-titulo">
+                    Cursos
+                    <div class="cursos-botoes">
+                        <button class="cursos-botao ativo" data-curso="tecnologia">Tecnologia</button>
+                        <button class="cursos-botao" data-curso="inovacao">Inovação</button>
+                        <button class="cursos-botao" data-curso="negocios">Negócios</button>
+                    </div>
+                </h1>
+                <h2 class="cursos-subtitulo">Cursos de Curta Duração</h2>
+                <div class="cursos-conteudo">
+                    <div class="cursos-texto" id="cursos-texto">
+                        <h2>Tecnologia</h2>
+                        <ul>
+                            <li>Big Data Ecosystem <span>REMOTO • LIVE</span></li>
+                            <li>Creating Dashboards for BI <span>REMOTO • LIVE</span></li>
+                            <li>Big Data Science - Machine Learning & Data Mining <span>REMOTO • LIVE • MULTIMÍDIA</span></li>
+                            <li>Storytelling <span>REMOTO • LIVE</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="faq-container">
+                <h2 class="faq-titulo">FAQ</h2>
+                <h3 class="faq-subtitulo">Dúvidas Frequentes</h3>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <div class="faq-bar"></div>
+                        <div class="faq-pergunta">
+                            <span>QUANDO POSSO ME MATRICULAR?</span>
+                        </div>
+                        <div class="faq-resposta">
+                            <span>Você pode se matricular em qualquer dia e hora, basta acessar a página do curso e se inscrever.</span>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-bar"></div>
+                        <div class="faq-pergunta">
+                            <span>POSSO FAZER DOIS OU MAIS CURSOS AO MESMO TEMPO?</span>
+                        </div>
+                        <div class="faq-resposta">
+                            <span>Sim. Apenas atente-se às datas, elas devem ser diferentes, porque cada curso tem sua dinâmica.</span>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-bar"></div>
+                        <div class="faq-pergunta">
+                            <span>QUAIS OS PRÉ-REQUISITOS?</span>
+                        </div>
+                        <div class="faq-resposta">
+                            <span>Cada curso tem seus pré-requisitos descritos na própria página. Identifique-os, para que você obtenha um melhor aproveitamento do seu SHIFT.</span>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-bar"></div>
+                        <div class="faq-pergunta">
+                            <span>QUAL A DURAÇÃO DOS CURSOS?</span>
+                        </div>
+                        <div class="faq-resposta">
+                            <span>De 6 a 42 horas.</span>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-bar"></div>
+                        <div class="faq-pergunta">
+                            <span>PRECISO LEVAR ALGUM MATERIAL PARA AS AULAS?</span>
+                        </div>
+                        <div class="faq-resposta">
+                            <span>Não. Os materiais utilizados em sala de aula são fornecidos pela FIAP e as aulas mais técnicas são realizadas em nossos próprios laboratórios. Sugerimos somente que traga o que preferir para suas anotações.</span>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-bar"></div>
+                        <div class="faq-pergunta">
+                            <span>VOU RECEBER CERTIFICADO DE CONCLUSÃO DE CURSO?</span>
+                        </div>
+                        <div class="faq-resposta">
+                            <span>Sim. Ao cumprir pelo menos 75% da carga horária do curso, você receberá um Certificado Digital, que poderá ser acessado na plataforma.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
